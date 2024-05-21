@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/card_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name on the card" />
+
+    <EditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/expiry_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date (MM/YY)"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/security_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Security Code"
+        android:inputType="numberPassword" />
+
+    <EditText
+        android:id="@+id/zip_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ZIP/Postal Code" />
+
+    <RadioGroup
+        android:id="@+id/membership_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/free_membership"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Free Membership" />
+
+        <RadioButton
+            android:id="@+id/gold_membership"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold Membership £10/month" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Complete" />
+
+    <Button
+        android:id="@+id/skip_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip" />
+</LinearLayout>
